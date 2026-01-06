@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/icons/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero-wrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+            class="hero-bg" alt="Netflix Background">
+        <div class="hero-overlay"></div>
+        <div class="curve-mask"></div>
+
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"
+                class="logo">
+
+            <div class="nav-actions">
+                <div class="lang-select"><i class="fas fa-globe"></i> English <i class="fas fa-caret-down"></i></div>
+                <a href="#" class="signin-btn">Sign In</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+
+            <div class="email-signup-form">
+                <p class="form-title">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <input type="email" placeholder="Email address" required>
+                    </div>
+                    <button class="get-started-btn">Get Started <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-container">
+        <h2 class="section-title">Trending Now</h2>
+
+        <div class="filters">
+            <div class="filter-btn">India <i class="fas fa-caret-down"></i></div>
+            <div class="filter-btn">Movies <i class="fas fa-caret-down"></i></div>
+        </div>
+
+        <div class="carousel-wrapper">
+            <button class="slider-arrow arrow-left" id="slideLeft" aria-label="Slide Left"><i
+                    class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-track" id="slider">
+                <div class="movie-card">
+                    <span class="rank-number">1</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">2</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/cf7hE1ifY4UNbS25tGnaTyyDrI2.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">3</span>
+                    <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/ekZobS8isE6mA53RAiGDG93hBxL.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">4</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">5</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">6</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">7</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/cWsBscZzwu5brg9YjNkGewRUvJX.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">8</span>
+                    <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">9</span>
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/2CAL2433ZeIihfX1Hb2139CX0pW.jpg"
+                        alt="Poster">
+                </div>
+                <div class="movie-card">
+                    <span class="rank-number">10</span>
+                    <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg"
+                        alt="Poster">
+                </div>
+            </div>
+
+            <button class="slider-arrow arrow-right" id="slideRight" aria-label="Slide Right"><i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <h2 class="section-title">More reasons to join</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <i class="fas fa-tv card-icon"></i>
+            </div>
+            <div class="reason-card">
+                <h3>Download your shows to watch offline</h3>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <i class="fas fa-download card-icon"></i>
+            </div>
+            <div class="reason-card">
+                <h3>Watch everywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <i class="fas fa-binoculars card-icon"></i>
+            </div>
+            <div class="reason-card">
+                <h3>Create profiles for kids</h3>
+                <p>Send children on adventures with their favourite characters in a space made just for them.</p>
+                <i class="fas fa-smile card-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <h2 class="section-title center-text">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button>What is Netflix? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button>How much does Netflix cost? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                        fixed monthly fee. Plans range from ₹149 to ₹649/month.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button>Where can i watch? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.<br><br>
+                        You can also download your favourite shows with the iOS or Android app. Use downloads to watch
+                        while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button>How do i cancel? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        Netflix is flexible. You can easily cancel your account online in two clicks. There are no
+                        cancellation fees – start or stop your account anytime.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button>What can i watch on Netflix? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning
+                        Netflix originals, and more. Watch as much as you want, anytime you want.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button>Is Netflix good for kids? <i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <div>
+                        The Netflix Kids experience is included in your membership to give parents control while kids
+                        enjoy family-friendly TV shows and films in their own space.<br><br>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="email-signup-form mt-50">
+            <p class="form-title center-text">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="form-row">
+                <div class="input-wrap">
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <button class="get-started-btn">Get Started <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Questions? Call <a href="#" class="phone-link">000-800-919-1743</a></p>
+        <div class="footer-grid">
+            <a href="#">FAQ</a>
+            <a href="#">Help Centre</a>
+            <a href="#">Account</a>
+            <a href="#">Media Centre</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="lang-select footer-lang"><i class="fas fa-globe"></i> English <i class="fas fa-caret-down ml-5"></i>
+        </div>
+        <p>Netflix India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
