@@ -10,7 +10,7 @@ A pixel-perfect, responsive replication of the Netflix landing page interface. T
 ## 📸 Demo & Screenshots
 
 ### 🎥 Live Demo
-**[🔴 View Live Site](https://mayank25k.github.io/netflix-landing-page/)**
+**[🔴 View Live Site](https://mayank25k.github.io/netflix-showcase/)**
 
 ### 🖼️ UI Gallery
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -18,11 +18,11 @@ A pixel-perfect, responsive replication of the Netflix landing page interface. T
 </div>
 <br>
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="assets/img/Screenshot 2.png" alt="Trending Now_1" width="45%">
-  <img src="assets/img/Screenshot 3.png" alt="Trending Now_2" width="45%">
-  <img src="assets/img/Screenshot 4.png" alt="More reasons to join" width="45%">
-  <img src="assets/img/Screenshot 5.png" alt="FAQ" width="45%">
-  <img src="assets/img/Screenshot 6.png" alt="Footer" width="45%">
+  <img src="assets/img/Screenshot 2.png" alt="Trending Now_1" width="100%">
+  <img src="assets/img/Screenshot 3.png" alt="Trending Now_2" width="50%">
+  <img src="assets/img/Screenshot 4.png" alt="More reasons to join" width="50%">
+  <img src="assets/img/Screenshot 5.png" alt="FAQ" width="50%">
+  <img src="assets/img/Screenshot 6.png" alt="Footer" width="50%">
 </div>
 
 ---
@@ -55,11 +55,11 @@ While this is a static site, it is best viewed using a local server to ensure al
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/MAYANK25K/netflix-landing-page.git](https://github.com/MAYANK25K/netflix-landing-page.git)
+    git clone [https://github.com/MAYANK25K/netflix-showcase.git](https://github.com/MAYANK25K/netflix-showcase.git)
     ```
 2.  **Open in VS Code:**
     ```bash
-    code netflix-landing-page
+    code netflix-showcase
     ```
 3.  **Launch Server:**
     * Install the **"Live Server"** extension in VS Code.
