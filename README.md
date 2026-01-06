@@ -18,11 +18,11 @@ A pixel-perfect, responsive replication of the Netflix landing page interface. T
 </div>
 <br>
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="assets/img/Screenshot 2.png" alt="Trending Now_1" width="50%">
-  <img src="assets/img/Screenshot 3.png" alt="Trending Now_2" width="50%">
-  <img src="assets/img/Screenshot 4.png" alt="More reasons to join" width="50%">
-  <img src="assets/img/Screenshot 5.png" alt="FAQ" width="50%">
-  <img src="assets/img/Screenshot 6.png" alt="Footer" width="50%">
+  <img src="assets/img/Screenshot 2.png" alt="Trending Now_1" width="45%">
+  <img src="assets/img/Screenshot 3.png" alt="Trending Now_2" width="45%">
+  <img src="assets/img/Screenshot 4.png" alt="More reasons to join" width="45%">
+  <img src="assets/img/Screenshot 5.png" alt="FAQ" width="45%">
+  <img src="assets/img/Screenshot 6.png" alt="Footer" width="45%">
 </div>
 
 ---
