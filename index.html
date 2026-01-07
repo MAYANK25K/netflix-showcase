@@ -38,9 +38,16 @@
                 <p class="form-title">Ready to watch? Enter your email to create or restart your membership.</p>
                 <div class="form-row">
                     <div class="input-wrap">
-                        <input type="email" placeholder="Email address" required>
+                        <input 
+                            type="text" 
+                            placeholder="Email address" 
+                            autocomplete="off" 
+                            spellcheck="false"
+                        >
                     </div>
-                    <button class="get-started-btn">Get Started <i class="fas fa-chevron-right"></i></button>
+                    <button class="get-started-btn" type="button" onclick="showDataPopup()">
+                        Get Started <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -219,9 +226,16 @@
             <p class="form-title center-text">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="form-row">
                 <div class="input-wrap">
-                    <input type="email" placeholder="Email address" required>
+                    <input 
+                        type="text" 
+                        placeholder="Email address" 
+                        autocomplete="off" 
+                        spellcheck="false"
+                    >
                 </div>
-                <button class="get-started-btn">Get Started <i class="fas fa-chevron-right"></i></button>
+                <button class="get-started-btn" type="button" onclick="showDataPopup()">
+                    Get Started <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -252,28 +266,44 @@
 
     <script src="script.js"></script>
 
-    <div class="security-overlay" id="securityOverlay">
-    <div class="security-modal">
-        <div class="security-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="11" stroke="#0a84ff" stroke-width="2"/>
-                <path d="M12 7V13" stroke="#0a84ff" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="12" cy="16.5" r="1" fill="#0a84ff"/>
-            </svg>
+    <div class="security-overlay" id="securityOverlay" style="display: flex;">
+        <div class="security-modal">
+            <div class="security-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" stroke="#0a84ff" stroke-width="2"/>
+                    <path d="M12 7V13" stroke="#0a84ff" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="16.5" r="1" fill="#0a84ff"/>
+                </svg>
+            </div>
+            <h3 class="security-title">Educational Project</h3>
+            <p class="security-desc">
+                This is a developer portfolio clone created for learning purposes.<br><br>
+                It is <b>not</b> the official Netflix site. Do not enter real credentials.
+            </p>
+            <button class="security-btn" onclick="document.getElementById('securityOverlay').style.display='none'">
+                I Understand
+            </button>
         </div>
-
-        <h3 class="security-title">Educational Project</h3>
-        
-        <p class="security-desc">
-            This is a developer portfolio clone created for learning purposes.<br><br>
-            It is <b>not</b> the official Netflix site. Do not enter real credentials.
-        </p>
-        
-        <button class="security-btn" onclick="document.getElementById('securityOverlay').style.display='none'">
-            I Understand
-        </button>
     </div>
-</div>
-</body>
 
+    <div class="security-overlay" id="dataPopup" style="display: none;">
+        <div class="security-modal">
+            <div class="security-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" stroke="#32D74B" stroke-width="2"/>
+                    <path d="M8 12L11 15L16 9" stroke="#32D74B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="security-title">Demo Mode</h3>
+            <p class="security-desc">
+                No data was saved.<br><br>
+                Your email was not sent to any server because this is a frontend portfolio project.
+            </p>
+            <button class="security-btn" onclick="closeDataPopup()" style="color: #32D74B;">
+                OK
+            </button>
+        </div>
+    </div>
+
+</body>
 </html>
