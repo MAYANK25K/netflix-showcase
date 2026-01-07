@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <title>Netflix UI Clone - Educational Portfolio Project</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./assets/icons/favicon.png" sizes="32x32">
@@ -251,6 +251,29 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <div class="security-overlay" id="securityOverlay">
+    <div class="security-modal">
+        <div class="security-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="11" stroke="#0a84ff" stroke-width="2"/>
+                <path d="M12 7V13" stroke="#0a84ff" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="16.5" r="1" fill="#0a84ff"/>
+            </svg>
+        </div>
+
+        <h3 class="security-title">Educational Project</h3>
+        
+        <p class="security-desc">
+            This is a developer portfolio clone created for learning purposes.<br><br>
+            It is <b>not</b> the official Netflix site. Do not enter real credentials.
+        </p>
+        
+        <button class="security-btn" onclick="document.getElementById('securityOverlay').style.display='none'">
+            I Understand
+        </button>
+    </div>
+</div>
 </body>
 
 </html>
